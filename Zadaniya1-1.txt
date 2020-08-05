@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	double first; //123.78
+	int second; //123
+	double third; //0.78
+
+	printf("¬ведите число:\n");
+	first = (int) second;
+	third = first - second;
+
+	printf("%d", first);
+	printf("%.2f", second);
+	printf("%.2lf", third);
+	return 0;
+}
