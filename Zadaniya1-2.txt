@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+/*Разработайте программу, которая при заданном целом числе 
+извлекает и печатает первую(самую правую) цифру этого числа.*/
+
+int main() {
+	setlocale(LC_ALL, "Russian");
+	int num;
+
+	printf("Введите число:\n");
+	scanf_s("%d", &num);
+	num %= 10;
+
+	printf("%d", num);
+	return 0;
+}
